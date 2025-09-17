@@ -2,8 +2,8 @@
 
 ## Deskripsi
 
-Penggunaan **histogram equalization** pada gambar yang gelap untuk meningkatkan kontras dan memperjelas detail gambar. 
-Histogram equalization adalah teknik yang menyebarkan distribusi intensitas piksel sehingga gambar menjadi lebih terang dan detail lebih terlihat.
+Penggunaan **histogram equalization** pada gambar yang gelap dan terang untuk meningkatkan kontras dan memperjelas detail gambar. 
+Histogram equalization adalah teknik yang menyebarkan distribusi intensitas piksel lebih merata.
 
 ## Cara Kerja
 
@@ -13,27 +13,15 @@ Histogram equalization adalah teknik yang menyebarkan distribusi intensitas piks
 4. Setiap nilai piksel pada gambar asli dipetakan ke nilai baru berdasarkan CDF.
 5. Gambar hasil equalization disimpan dan ditampilkan.
 
+## Link Google Colab
+https://colab.research.google.com/drive/1edT3vuK5gqKdGVXIFrX8xg6LaERBS-G1?usp=sharing 
 ## Perbandingan Gambar
 
 | Sebelum (Original)                | Sesudah (Enhanced)                |
 |------------------------------------|-----------------------------------|
 | ![Original Image](dark_image.jpg)  | ![Enhanced Image](enhanced_dark_image.jpg) |
+| ![Original Image](bright_image.jpg)  | ![Enhanced Image](enhanced_bright_image.jpg) |
 
-- **Gambar Sebelum:** Gambar asli tampak gelap dan detail kurang jelas.
-- **Gambar Sesudah:** Setelah histogram equalization, gambar menjadi lebih terang dan detail lebih jelas.
+- **Gambar Sebelum:** Gambar asli terlalu gelap atau terang dan detail kurang jelas.
+- **Gambar Sesudah:** Setelah histogram equalization, gambar menjadi lebih terang atau gelap dan detail lebih jelas.
 
-## Cara Menjalankan
-
-1. Pastikan `numpy` dan `opencv-python` sudah terpasang:
-   ```
-   pip install -r requirements.txt
-   ```
-2. Jalankan program:
-   ```
-   python CVL_Assignment01.py
-   ```
-
-## Referensi
-
-- [Histogram Equalization - Wikipedia](https://en.wikipedia.org/wiki/Histogram_equalization)
-- [OpenCV Documentation](https://docs.opencv.org/)
