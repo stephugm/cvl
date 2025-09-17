@@ -15,6 +15,11 @@ Histogram equalization adalah teknik yang menyebarkan distribusi intensitas piks
 
 ## Link Google Colab
 https://colab.research.google.com/drive/1edT3vuK5gqKdGVXIFrX8xg6LaERBS-G1?usp=sharing 
+
+## Report
+Detail Laporan dapat dilihat di
+[Histogram Equalization Report](Histogram_Equalization_Report.pdf)
+
 ## Perbandingan Gambar
 
 | Sebelum (Original)                | Sesudah (Enhanced)                |
