@@ -1,6 +1,6 @@
-# 🔥 Fire Detection with Probabilistic Thresholding
+# Fire Detection with Probabilistic Thresholding
 
-Implementasi deteksi area api berbasis **pendekatan statistik** mengikuti metode dari  
+Implementasi deteksi api berbasis **pendekatan probabilitas** mengikuti metode dari  
 **Liew et al. (2006) – “Deriving Optimal Thresholds for Active Fire Detection” (IEEE IGARSS).**  
 Paper: https://doi.org/10.1109/IGARSS.2006.844
 
@@ -8,7 +8,8 @@ Paper: https://doi.org/10.1109/IGARSS.2006.844
 
 ## Deskripsi
 - Sistem ini mendeteksi piksel api dengan menghitung nilai fitur  
-  \\( P_{fire} = (1 - H_{norm}) \\times S_{norm} \\times V_{norm} \\).  
+  $P_{\text{fire}} = (1 - H_{\text{norm}}) \times S_{\text{norm}} \times V_{\text{norm}}$
+
 - Dua distribusi probabilitas (PDF) dipelajari dari data:
   - **P(x | Fire)** dan **P(x | Background)**  
 - Ambang optimal ditentukan di titik potong kedua PDF (*Maximum Likelihood Criterion*).  
@@ -23,6 +24,12 @@ Paper: https://doi.org/10.1109/IGARSS.2006.844
 3. **Deteksi api** pada citra baru (`fire_probability_mask`)  
 4. **Evaluasi hasil** dengan IoU & akurasi  
 5. **Visualisasi**: PDF, Error vs Threshold, Histogram P_fire, dan hasil deteksi  
+
+---
+
+## Report
+Detail Laporan dapat dilihat di
+[Fire Detection Report](Deteksi_Api_Report.pdf)
 
 ---
 
@@ -44,7 +51,3 @@ Folder `dataset/` harus berisi citra dan mask biner (`*_mask.png`).
 
 Contoh Hasil untuk dataset 17
 ![Result](result1.png) 
-
-## Report
-Detail Laporan dapat dilihat di
-[Fire Detection Report](Deteksi_Api_Report.pdf)
